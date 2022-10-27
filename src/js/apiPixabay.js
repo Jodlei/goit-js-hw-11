@@ -33,10 +33,10 @@ export class PixabayFetchApi {
   async fetchImage() {
     const URL = `${BASE_URL}?key=${KEY}&page=${this.page}&per_page=${per_page}&q=${this.searchQuery}&image_type =${image_type}&orientation=${orientation}&safesearch=${safesearch}`;
 
-    const response = await axios.get(URL);
+    const resp = await axios.get(URL);
 
-    // this.incrementPage();
+    this.incrementPage();
 
-    return response.data;
+    return resp.data;
   }
 }
