@@ -51,6 +51,8 @@ async function searchData() {
         'We are sorry, but you have reached the end of search results.'
       );
     } else {
+      Notiflix.Notify.info(`Hooray! We found ${data.totalHits} images.`);
+
       createLists(data.hits);
 
       lightBox();

@@ -6,13 +6,15 @@
   background-color: rgba(172, 150, 150, 0.712);
   display: flex;
   justify-content: center;
-  min-height: 50px;
-  padding: 5;
+  min-height: 70px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .search-form input {
   border-radius: 5px;
   padding: 0px 10px;
+  width: 300px;
 }
 
 .search-form button {
